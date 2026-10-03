@@ -1,0 +1,32 @@
+{
+  "name": "reliefhub-backend",
+  "version": "1.0.0",
+  "main": "dist/main.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node --env-file-if-exists=.env dist/main.js",
+    "dev": "tsc -p tsconfig.json && node --env-file-if-exists=.env dist/main.js"
+  },
+  "description": "ReliefHub disaster alert ingestion API",
+  "dependencies": {
+    "@nestjs/common": "^11.2.7",
+    "@nestjs/core": "^11.2.7",
+    "@nestjs/platform-express": "^11.2.7",
+    "@nestjs/schedule": "^12.0.2",
+    "bcryptjs": "^3.0.3",
+    "fast-xml-parser": "^5.11.2",
+    "jsonwebtoken": "^9.0.3",
+    "mongodb": "^7.7.0",
+    "nodemailer": "^10.0.14",
+    "reflect-metadata": "^0.2.2",
+    "rxjs": "^7.8.2"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/jsonwebtoken": "^9.0.10",
+    "@types/node": "^24.19.1",
+    "@types/nodemailer": "^8.0.2",
+    "typescript": "^5.9.3"
+  },
+  "private": true
+}
